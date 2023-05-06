@@ -1,0 +1,21 @@
+{
+	"color": "#ffeca0ca",
+	"description": "",
+	"display_name": "",
+	"display_name_bool": false,
+	"id": "character-1681184582.json",
+	"mirror_portraits": false,
+	"name": "Maria",
+	"nickname": "",
+	"nickname_bool": false,
+	"offset_x": 0,
+	"offset_y": -90,
+	"portraits": [
+		{
+			"name": "Default",
+			"path": "res://Assets/chars/mariaportrait.png"
+		}
+	],
+	"scale": 70,
+	"theme": ""
+}

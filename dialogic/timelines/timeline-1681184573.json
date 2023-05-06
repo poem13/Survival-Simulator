@@ -1,0 +1,156 @@
+{
+	"events": [
+		{
+			"animation": "[Default]",
+			"animation_length": 0,
+			"change_mirror_portrait": false,
+			"change_z_index": false,
+			"character": "character-1681184582.json",
+			"event_id": "dialogic_002",
+			"mirror_portrait": false,
+			"portrait": "Default",
+			"portrait_definition": "",
+			"position": {
+				"0": false,
+				"1": false,
+				"2": true,
+				"3": false,
+				"4": false
+			},
+			"type": 0,
+			"z_index": 0
+		},
+		{
+			"character": "character-1681184582.json",
+			"event_id": "dialogic_001",
+			"portrait": "",
+			"text": "Sorry about my son. He's got this thunder phobia..."
+		},
+		{
+			"character": "",
+			"event_id": "dialogic_010",
+			"options": [
+
+			],
+			"portrait": "",
+			"question": "I should try to make some small talk with her"
+		},
+		{
+			"choice": "How old is your son?",
+			"condition": "",
+			"definition": "",
+			"event_id": "dialogic_011",
+			"value": ""
+		},
+		{
+			"character": "character-1681184582.json",
+			"event_id": "dialogic_001",
+			"portrait": "",
+			"text": "He's going to be 7 tomorrow! Ain't he a doll?"
+		},
+		{
+			"character": "character-1681184582.json",
+			"event_id": "dialogic_001",
+			"portrait": "",
+			"text": "He gets a little shy around strangers but he's super friendly when he warms up to you."
+		},
+		{
+			"choice": "Don't you look too young to be a mom?",
+			"condition": "",
+			"definition": "",
+			"event_id": "dialogic_011",
+			"value": ""
+		},
+		{
+			"character": "character-1681184582.json",
+			"event_id": "dialogic_001",
+			"portrait": "",
+			"text": "Damn you all up in my business like that..."
+		},
+		{
+			"character": "character-1681184582.json",
+			"event_id": "dialogic_001",
+			"portrait": "",
+			"text": "Yeah unfortunately my baby daddy pressured me to get a kid with him when I was 16. I thought having a kid would bring us together..."
+		},
+		{
+			"character": "character-1681184582.json",
+			"event_id": "dialogic_001",
+			"portrait": "",
+			"text": "It turned out to be the opposite..."
+		},
+		{
+			"choice": "When's this storm done?",
+			"condition": "",
+			"definition": "",
+			"event_id": "dialogic_011",
+			"value": ""
+		},
+		{
+			"character": "character-1681184582.json",
+			"event_id": "dialogic_001",
+			"portrait": "",
+			"text": "I dunno but I never expected this shit to happen! I thought I'd get to the islands in peace."
+		},
+		{
+			"character": "character-1681184582.json",
+			"event_id": "dialogic_001",
+			"portrait": "",
+			"text": "I ain't never stepping on a boat again...sheesh!"
+		},
+		{
+			"choice": "First time in a cruise?",
+			"condition": "",
+			"definition": "",
+			"event_id": "dialogic_011",
+			"value": ""
+		},
+		{
+			"character": "character-1681184582.json",
+			"event_id": "dialogic_001",
+			"portrait": "",
+			"text": "Yeah actually...my baby's obsessed with ships and shit and he always wanted to be in a cruise."
+		},
+		{
+			"character": "character-1681184582.json",
+			"event_id": "dialogic_001",
+			"portrait": "",
+			"text": "He has those phases where he's obsessed with something and then he moves onto the next! First it was roblox, now ships..."
+		},
+		{
+			"choice": "Actually I gotta go...",
+			"condition": "",
+			"definition": "",
+			"event_id": "dialogic_011",
+			"value": ""
+		},
+		{
+			"character": "character-1681184582.json",
+			"event_id": "dialogic_001",
+			"portrait": "",
+			"text": "Well ok then...bye I guess."
+		},
+		{
+			"event_id": "dialogic_022",
+			"transition_duration": 1
+		},
+		{
+			"event_id": "dialogic_013"
+		},
+		{
+			"character": "character-1681184582.json",
+			"event_id": "dialogic_001",
+			"portrait": "",
+			"text": "Well, hopefully this thing will be over soon!"
+		},
+		{
+			"event_id": "dialogic_022",
+			"transition_duration": 1
+		}
+	],
+	"metadata": {
+		"dialogic-version": "1.4.5",
+		"file": "timeline-1681184573.json",
+		"name": "maria1"
+	}
+}

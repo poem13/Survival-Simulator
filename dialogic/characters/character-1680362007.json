@@ -1,0 +1,21 @@
+{
+	"color": "#ff307e25",
+	"description": "",
+	"display_name": "C",
+	"display_name_bool": false,
+	"id": "character-1680362007.json",
+	"mirror_portraits": false,
+	"name": "Crew Boy",
+	"nickname": "",
+	"nickname_bool": false,
+	"offset_x": 0,
+	"offset_y": -90,
+	"portraits": [
+		{
+			"name": "Default",
+			"path": "res://Assets/chars/jaden.png"
+		}
+	],
+	"scale": 70,
+	"theme": ""
+}

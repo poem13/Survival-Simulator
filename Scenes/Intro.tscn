@@ -1,0 +1,614 @@
+[gd_scene load_steps=45 format=2]
+
+[ext_resource path="res://Scenes/Player/Player.tscn" type="PackedScene" id=1]
+[ext_resource path="res://Scenes/Player/IntroPlayer.gd" type="Script" id=2]
+[ext_resource path="res://Assets/cruisebg1.png" type="Texture" id=3]
+[ext_resource path="res://Scenes/people/crewboy.tscn" type="PackedScene" id=4]
+[ext_resource path="res://Scenes/Intro.gd" type="Script" id=5]
+[ext_resource path="res://Scenes/contextMenu.tscn" type="PackedScene" id=6]
+[ext_resource path="res://Assets/GUI/UI_Flat_Button_Small_Lock_02a1.png" type="Texture" id=7]
+[ext_resource path="res://Assets/Retro Gaming.ttf" type="DynamicFontData" id=8]
+[ext_resource path="res://Assets/GUI/Buttons/contextMenu.tres" type="StyleBox" id=9]
+[ext_resource path="res://Assets/GUI/popupfont.tres" type="DynamicFont" id=10]
+[ext_resource path="res://Assets/Scenes/pool.png" type="Texture" id=11]
+[ext_resource path="res://Scenes/people/Niko.png" type="Texture" id=12]
+[ext_resource path="res://Assets/glass.png" type="Texture" id=13]
+[ext_resource path="res://Scenes/GUI/Pause.tscn" type="PackedScene" id=14]
+[ext_resource path="res://Scenes/GUI/pauseshader.tscn" type="PackedScene" id=15]
+[ext_resource path="res://Scenes/GUI/PauseMenu.tscn" type="PackedScene" id=16]
+[ext_resource path="res://Assets/GUI/pausemenu.tres" type="StyleBox" id=17]
+[ext_resource path="res://Assets/AbrilFatface-Regular.ttf" type="DynamicFontData" id=18]
+
+[sub_resource type="RectangleShape2D" id=1]
+extents = Vector2( 77.6569, 537.863 )
+
+[sub_resource type="RectangleShape2D" id=2]
+extents = Vector2( 1322.67, 60.643 )
+
+[sub_resource type="RectangleShape2D" id=3]
+extents = Vector2( 1284.41, 102.397 )
+
+[sub_resource type="RectangleShape2D" id=5]
+extents = Vector2( 315, 33.5 )
+
+[sub_resource type="CapsuleShape2D" id=11]
+radius = 27.0
+height = 24.0
+
+[sub_resource type="CapsuleShape2D" id=12]
+radius = 138.0
+height = 0.0
+
+[sub_resource type="CapsuleShape2D" id=13]
+radius = 52.0
+height = 72.0
+
+[sub_resource type="ParticlesMaterial" id=4]
+emission_shape = 2
+emission_box_extents = Vector3( 300, 1, 1 )
+flag_disable_z = true
+gravity = Vector3( -30, 98, 0 )
+orbit_velocity = 0.0
+orbit_velocity_random = 0.0
+scale = 3.0
+scale_random = 1.0
+color = Color( 0.482353, 0.713726, 0.901961, 1 )
+
+[sub_resource type="DynamicFont" id=16]
+size = 10
+outline_size = 1
+outline_color = Color( 0, 0, 0, 1 )
+extra_spacing_bottom = -5
+font_data = ExtResource( 8 )
+
+[sub_resource type="DynamicFont" id=20]
+font_data = ExtResource( 18 )
+
+[sub_resource type="StyleBoxFlat" id=21]
+content_margin_left = 9.0
+content_margin_right = 6.0
+bg_color = Color( 0.247059, 0.298039, 0.568627, 0.686275 )
+skew = Vector2( -0.103, 0 )
+border_width_left = 3
+border_width_top = 3
+border_width_right = 1
+border_width_bottom = 1
+border_color = Color( 1, 1, 1, 1 )
+shadow_color = Color( 0, 0, 0, 0.803922 )
+anti_aliasing = false
+anti_aliasing_size = 10.0
+
+[sub_resource type="DynamicFont" id=22]
+font_data = ExtResource( 18 )
+
+[sub_resource type="StyleBoxFlat" id=23]
+content_margin_left = 9.0
+content_margin_right = 6.0
+bg_color = Color( 0.247059, 0.298039, 0.568627, 0.686275 )
+skew = Vector2( -0.103, 0 )
+border_width_left = 3
+border_width_top = 3
+border_width_right = 1
+border_width_bottom = 1
+border_color = Color( 1, 1, 1, 1 )
+shadow_color = Color( 0, 0, 0, 0.803922 )
+anti_aliasing = false
+anti_aliasing_size = 10.0
+
+[sub_resource type="DynamicFont" id=24]
+font_data = ExtResource( 18 )
+
+[sub_resource type="StyleBoxFlat" id=25]
+content_margin_left = 9.0
+content_margin_right = 6.0
+bg_color = Color( 0.247059, 0.298039, 0.568627, 0.686275 )
+skew = Vector2( -0.103, 0 )
+border_width_left = 3
+border_width_top = 3
+border_width_right = 1
+border_width_bottom = 1
+border_color = Color( 1, 1, 1, 1 )
+shadow_color = Color( 0, 0, 0, 0.803922 )
+anti_aliasing = false
+anti_aliasing_size = 10.0
+
+[sub_resource type="DynamicFont" id=26]
+font_data = ExtResource( 18 )
+
+[sub_resource type="StyleBoxFlat" id=27]
+content_margin_left = 9.0
+content_margin_right = 6.0
+bg_color = Color( 0.247059, 0.298039, 0.568627, 0.686275 )
+skew = Vector2( -0.103, 0 )
+border_width_left = 3
+border_width_top = 3
+border_width_right = 1
+border_width_bottom = 1
+border_color = Color( 1, 1, 1, 1 )
+shadow_color = Color( 0, 0, 0, 0.803922 )
+anti_aliasing = false
+anti_aliasing_size = 10.0
+
+[sub_resource type="RectangleShape2D" id=17]
+extents = Vector2( 399.361, 55.2019 )
+
+[sub_resource type="RectangleShape2D" id=6]
+extents = Vector2( 53.5, 10.5 )
+
+[sub_resource type="RectangleShape2D" id=7]
+extents = Vector2( 39, 34.25 )
+
+[sub_resource type="RectangleShape2D" id=8]
+extents = Vector2( 47, 11 )
+
+[sub_resource type="RectangleShape2D" id=9]
+extents = Vector2( 63, 210.5 )
+
+[sub_resource type="RectangleShape2D" id=10]
+extents = Vector2( 7.00591, 96.3341 )
+
+[sub_resource type="StyleBoxTexture" id=15]
+texture = ExtResource( 7 )
+region_rect = Rect2( 0, 0, 32, 32 )
+modulate_color = Color( 1, 1, 1, 0.686275 )
+
+[sub_resource type="RectangleShape2D" id=18]
+extents = Vector2( 30, 97.5 )
+
+[sub_resource type="RectangleShape2D" id=19]
+extents = Vector2( 24.5, 97 )
+
+[node name="Intro" type="Node2D"]
+script = ExtResource( 5 )
+
+[node name="bg2" type="ColorRect" parent="."]
+margin_left = -231.0
+margin_top = -180.0
+margin_right = -191.0
+margin_bottom = -140.0
+rect_scale = Vector2( 43.9378, 27.2469 )
+color = Color( 0, 0, 0, 1 )
+
+[node name="bg3" type="ColorRect" parent="."]
+margin_left = 221.0
+margin_top = 287.0
+margin_right = 261.0
+margin_bottom = 327.0
+rect_scale = Vector2( 20.8386, 2.60446 )
+color = Color( 0.0352941, 0.34902, 0.517647, 1 )
+
+[node name="bg" type="TextureRect" parent="."]
+margin_left = 116.0
+margin_top = 80.0
+margin_right = 2616.0
+margin_bottom = 1121.0
+rect_scale = Vector2( 0.412471, 0.502944 )
+texture = ExtResource( 3 )
+
+[node name="StaticBody2D" type="StaticBody2D" parent="bg"]
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="bg/StaticBody2D"]
+position = Vector2( 2579.65, 526.898 )
+shape = SubResource( 1 )
+
+[node name="StaticBody2D2" type="StaticBody2D" parent="bg"]
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="bg/StaticBody2D2"]
+position = Vector2( 1312.67, -52.6898 )
+shape = SubResource( 2 )
+
+[node name="StaticBody2D3" type="StaticBody2D" parent="bg"]
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="bg/StaticBody2D3"]
+position = Vector2( 1280.62, 1130.34 )
+shape = SubResource( 3 )
+
+[node name="StaticBody2D" type="StaticBody2D" parent="."]
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="StaticBody2D"]
+position = Vector2( 740, 322.5 )
+shape = SubResource( 5 )
+
+[node name="crewboy" parent="." instance=ExtResource( 4 )]
+position = Vector2( 1012, 375 )
+scale = Vector2( 0.5, 0.5 )
+
+[node name="staticBodyBoy" type="StaticBody2D" parent="crewboy"]
+position = Vector2( -2024, -750 )
+scale = Vector2( 2, 2 )
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="crewboy/staticBodyBoy"]
+position = Vector2( 1010, 339 )
+shape = SubResource( 11 )
+
+[node name="nearBoy" type="Area2D" parent="crewboy"]
+
+[node name="nearBoyCollision" type="CollisionShape2D" parent="crewboy/nearBoy"]
+position = Vector2( -10, 24 )
+shape = SubResource( 12 )
+
+[node name="mouseNode" type="Node2D" parent="crewboy"]
+position = Vector2( -2024, -750 )
+scale = Vector2( 2, 2 )
+
+[node name="mouseNear" type="Area2D" parent="crewboy/mouseNode"]
+visible = false
+position = Vector2( 692, 434 )
+scale = Vector2( 0.5, 0.5 )
+
+[node name="mouseNear" type="CollisionShape2D" parent="crewboy/mouseNode/mouseNear"]
+position = Vector2( 0, 12 )
+shape = SubResource( 13 )
+
+[node name="RichTextLabel" type="RichTextLabel" parent="crewboy/mouseNode"]
+margin_left = 992.0
+margin_top = 342.0
+margin_right = 1032.0
+margin_bottom = 382.0
+rect_scale = Vector2( 1.00095, 1.90697 )
+
+[node name="Player" parent="." instance=ExtResource( 1 )]
+position = Vector2( 644, 423 )
+scale = Vector2( 1.5, 1.5 )
+script = ExtResource( 2 )
+
+[node name="Camera2D" type="Camera2D" parent="Player"]
+scale = Vector2( 1.37089, 1.3239 )
+current = true
+zoom = Vector2( 0.6, 0.6 )
+smoothing_enabled = true
+smoothing_speed = 10.0
+
+[node name="Particles2D" type="Particles2D" parent="Player"]
+position = Vector2( 60, -148 )
+amount = 1000
+lifetime = 4.5
+speed_scale = 3.0
+process_material = SubResource( 4 )
+
+[node name="Thoughts" type="Label" parent="Player"]
+visible = false
+margin_left = -92.0
+margin_top = -41.3333
+margin_right = 142.0
+margin_bottom = -12.3333
+rect_scale = Vector2( 0.780456, 0.925607 )
+custom_fonts/font = SubResource( 16 )
+align = 1
+valign = 1
+autowrap = true
+
+[node name="GUI" type="ViewportContainer" parent="Player"]
+margin_right = 40.0
+margin_bottom = 40.0
+
+[node name="GUI" type="CanvasLayer" parent="Player/GUI"]
+
+[node name="Pause" parent="Player/GUI/GUI" instance=ExtResource( 14 )]
+
+[node name="pauseshader" parent="Player/GUI/GUI/Pause" instance=ExtResource( 15 )]
+visible = false
+
+[node name="PauseMenu" parent="Player/GUI/GUI/Pause" instance=ExtResource( 16 )]
+visible = false
+margin_left = 202.0
+margin_top = 80.0
+margin_right = -438.0
+margin_bottom = -280.0
+
+[node name="ResumeButton" type="Button" parent="Player/GUI/GUI/Pause/PauseMenu"]
+margin_top = 112.0
+margin_right = 254.0
+margin_bottom = 138.0
+custom_fonts/font = SubResource( 20 )
+custom_styles/hover = SubResource( 21 )
+custom_styles/pressed = ExtResource( 17 )
+custom_styles/normal = ExtResource( 17 )
+text = "Resume"
+
+[node name="SaveButton" type="Button" parent="Player/GUI/GUI/Pause/PauseMenu"]
+margin_top = 148.0
+margin_right = 254.0
+margin_bottom = 174.0
+custom_fonts/font = SubResource( 22 )
+custom_styles/hover = SubResource( 23 )
+custom_styles/pressed = ExtResource( 17 )
+custom_styles/normal = ExtResource( 17 )
+text = "Save"
+
+[node name="LoadButton" type="Button" parent="Player/GUI/GUI/Pause/PauseMenu"]
+margin_top = 184.0
+margin_right = 254.0
+margin_bottom = 210.0
+custom_fonts/font = SubResource( 24 )
+custom_styles/hover = SubResource( 25 )
+custom_styles/pressed = ExtResource( 17 )
+custom_styles/normal = ExtResource( 17 )
+text = "Load"
+
+[node name="QuitButton" type="Button" parent="Player/GUI/GUI/Pause/PauseMenu"]
+margin_top = 253.289
+margin_right = 254.0
+margin_bottom = 279.289
+custom_fonts/font = SubResource( 26 )
+custom_styles/hover = SubResource( 27 )
+custom_styles/pressed = ExtResource( 17 )
+custom_styles/normal = ExtResource( 17 )
+text = "Quit"
+
+[node name="OptionsButton" type="Button" parent="Player/GUI/GUI/Pause/PauseMenu"]
+margin_top = 217.883
+margin_right = 254.0
+margin_bottom = 243.883
+custom_fonts/font = SubResource( 26 )
+custom_styles/hover = SubResource( 27 )
+custom_styles/pressed = ExtResource( 17 )
+custom_styles/normal = ExtResource( 17 )
+text = "Options"
+
+[node name="TextureRect" type="TextureRect" parent="."]
+margin_left = 116.0
+margin_top = 80.0
+margin_right = 2616.0
+margin_bottom = 1121.0
+rect_scale = Vector2( 0.412556, 0.501418 )
+texture = ExtResource( 13 )
+
+[node name="pool" type="StaticBody2D" parent="."]
+position = Vector2( 104, 108 )
+scale = Vector2( 0.605987, 0.697318 )
+
+[node name="TextureRect" type="TextureRect" parent="pool"]
+margin_left = 221.127
+margin_right = 2721.13
+margin_bottom = 1041.0
+rect_scale = Vector2( 0.691362, 0.720076 )
+texture = ExtResource( 11 )
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="pool"]
+position = Vector2( 1184.84, 632.423 )
+shape = SubResource( 17 )
+
+[node name="pool" type="RichTextLabel" parent="pool"]
+margin_left = 836.651
+margin_top = 579.363
+margin_right = 876.651
+margin_bottom = 619.363
+rect_scale = Vector2( 18.9486, 2.84284 )
+
+[node name="StaticBody2D2" type="StaticBody2D" parent="."]
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="StaticBody2D2"]
+position = Vector2( 168.5, 391.5 )
+scale = Vector2( 1.00096, 1 )
+shape = SubResource( 6 )
+
+[node name="StaticBody2D3" type="StaticBody2D" parent="."]
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="StaticBody2D3"]
+position = Vector2( 257, 324.25 )
+shape = SubResource( 7 )
+
+[node name="StaticBody2D4" type="StaticBody2D" parent="."]
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="StaticBody2D4"]
+position = Vector2( 1101, 387 )
+shape = SubResource( 8 )
+
+[node name="StaticBody2D5" type="StaticBody2D" parent="."]
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="StaticBody2D5"]
+position = Vector2( 53, 200.5 )
+shape = SubResource( 9 )
+
+[node name="StaticBody2D6" type="StaticBody2D" parent="."]
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="StaticBody2D6"]
+position = Vector2( 296, 283 )
+shape = SubResource( 10 )
+
+[node name="StaticBody2D7" type="StaticBody2D" parent="."]
+position = Vector2( 132, 11 )
+scale = Vector2( 0.99006, 0.897342 )
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="StaticBody2D7"]
+position = Vector2( 296.952, 293.088 )
+shape = SubResource( 10 )
+
+[node name="niko" type="Sprite" parent="."]
+position = Vector2( 703.734, 234.172 )
+scale = Vector2( 0.536875, 0.544494 )
+texture = ExtResource( 12 )
+
+[node name="niko" type="RichTextLabel" parent="niko"]
+margin_left = -32.0
+margin_top = -76.0
+margin_right = 32.0
+margin_bottom = 10.0
+
+[node name="Node2D" type="Node2D" parent="."]
+
+[node name="contextMenu" parent="Node2D" instance=ExtResource( 6 )]
+visible = false
+margin_left = 813.0
+margin_top = 446.0
+margin_right = 853.0
+margin_bottom = 486.0
+
+[node name="exitButton" type="Button" parent="Node2D/contextMenu"]
+margin_left = 11.5308
+margin_top = 31.9862
+margin_right = 63.5308
+margin_bottom = 52.9862
+rect_scale = Vector2( 0.361626, 0.421499 )
+focus_mode = 0
+custom_fonts/font = ExtResource( 10 )
+custom_styles/hover = SubResource( 15 )
+custom_styles/pressed = ExtResource( 9 )
+custom_styles/normal = ExtResource( 9 )
+text = "X"
+
+[node name="viewButton" type="Button" parent="Node2D/contextMenu"]
+anchor_right = 0.505
+margin_left = 6.28943
+margin_top = 4.56946
+margin_right = 69.8202
+margin_bottom = 25.5695
+rect_scale = Vector2( 0.361626, 0.421499 )
+focus_mode = 0
+custom_fonts/font = ExtResource( 10 )
+custom_styles/hover = SubResource( 15 )
+custom_styles/pressed = ExtResource( 9 )
+custom_styles/normal = ExtResource( 9 )
+text = "View"
+
+[node name="talkButton" type="Button" parent="Node2D/contextMenu"]
+margin_left = 9.43408
+margin_top = 17.1354
+margin_right = 72.9648
+margin_bottom = 38.1354
+rect_scale = Vector2( 0.361626, 0.421499 )
+focus_mode = 0
+custom_fonts/font = ExtResource( 10 )
+custom_styles/hover = SubResource( 15 )
+custom_styles/pressed = ExtResource( 9 )
+custom_styles/normal = ExtResource( 9 )
+text = "Talk"
+
+[node name="nikoMenu" parent="Node2D" instance=ExtResource( 6 )]
+visible = false
+margin_left = 813.0
+margin_top = 446.0
+margin_right = 853.0
+margin_bottom = 486.0
+
+[node name="exitNiko" type="Button" parent="Node2D/nikoMenu"]
+margin_left = 11.5308
+margin_top = 31.9862
+margin_right = 63.5308
+margin_bottom = 52.9862
+rect_scale = Vector2( 0.361626, 0.421499 )
+custom_fonts/font = ExtResource( 10 )
+custom_styles/hover = SubResource( 15 )
+custom_styles/pressed = ExtResource( 9 )
+custom_styles/normal = ExtResource( 9 )
+text = "X"
+
+[node name="viewNiko" type="Button" parent="Node2D/nikoMenu"]
+anchor_right = 0.505
+margin_left = 6.28943
+margin_top = 4.56946
+margin_right = 69.8202
+margin_bottom = 25.5695
+rect_scale = Vector2( 0.361626, 0.421499 )
+custom_fonts/font = ExtResource( 10 )
+custom_styles/hover = SubResource( 15 )
+custom_styles/pressed = ExtResource( 9 )
+custom_styles/normal = ExtResource( 9 )
+text = "View"
+
+[node name="talkNiko" type="Button" parent="Node2D/nikoMenu"]
+margin_left = 9.43408
+margin_top = 17.1354
+margin_right = 72.9648
+margin_bottom = 38.1354
+rect_scale = Vector2( 0.361626, 0.421499 )
+custom_fonts/font = ExtResource( 10 )
+custom_styles/hover = SubResource( 15 )
+custom_styles/pressed = ExtResource( 9 )
+custom_styles/normal = ExtResource( 9 )
+text = "Talk"
+
+[node name="poolMenu" parent="Node2D" instance=ExtResource( 6 )]
+visible = false
+margin_left = 319.0
+margin_top = 549.0
+margin_right = 359.0
+margin_bottom = 589.0
+
+[node name="exitButton2" type="Button" parent="Node2D/poolMenu"]
+margin_left = 11.5308
+margin_top = 33.1286
+margin_right = 63.5308
+margin_bottom = 54.1286
+rect_scale = Vector2( 0.361626, 0.421499 )
+custom_fonts/font = ExtResource( 10 )
+custom_styles/hover = SubResource( 15 )
+custom_styles/pressed = ExtResource( 9 )
+custom_styles/normal = ExtResource( 9 )
+text = "X"
+
+[node name="viewButtonPool" type="Button" parent="Node2D/poolMenu"]
+anchor_right = 0.505
+margin_left = 6.28949
+margin_top = 3.42706
+margin_right = 69.8203
+margin_bottom = 24.4271
+rect_scale = Vector2( 0.361626, 0.421499 )
+custom_fonts/font = ExtResource( 10 )
+custom_styles/hover = SubResource( 15 )
+custom_styles/pressed = ExtResource( 9 )
+custom_styles/normal = ExtResource( 9 )
+text = "View"
+
+[node name="touchButton" type="Button" parent="Node2D/poolMenu"]
+margin_left = 7.33771
+margin_top = 12.566
+margin_right = 83.1447
+margin_bottom = 33.566
+rect_scale = Vector2( 0.361626, 0.421499 )
+custom_fonts/font = ExtResource( 10 )
+custom_styles/hover = SubResource( 15 )
+custom_styles/pressed = ExtResource( 9 )
+custom_styles/normal = ExtResource( 9 )
+text = "Touch"
+
+[node name="swimButton" type="Button" parent="Node2D/poolMenu"]
+margin_left = 7.33777
+margin_top = 22.8473
+margin_right = 82.9036
+margin_bottom = 43.8473
+rect_scale = Vector2( 0.361626, 0.421499 )
+custom_fonts/font = ExtResource( 10 )
+custom_styles/hover = SubResource( 15 )
+custom_styles/pressed = ExtResource( 9 )
+custom_styles/normal = ExtResource( 9 )
+text = "Swim"
+
+[node name="enter" type="Area2D" parent="."]
+
+[node name="enter" type="CollisionShape2D" parent="enter"]
+position = Vector2( 116, 500 )
+shape = SubResource( 18 )
+
+[node name="StaticBody2D8" type="StaticBody2D" parent="."]
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="StaticBody2D8"]
+position = Vector2( 91.5, 507 )
+shape = SubResource( 19 )
+
+[connection signal="area_entered" from="crewboy/nearBoy" to="." method="_on_nearBoy_area_entered"]
+[connection signal="area_exited" from="crewboy/nearBoy" to="." method="_on_nearBoy_area_exited"]
+[connection signal="mouse_entered" from="crewboy/mouseNode/mouseNear" to="." method="_on_mouseNear_mouse_entered"]
+[connection signal="mouse_exited" from="crewboy/mouseNode/mouseNear" to="." method="_on_mouseNear_mouse_exited"]
+[connection signal="mouse_entered" from="crewboy/mouseNode/RichTextLabel" to="." method="_on_RichTextLabel_mouse_entered"]
+[connection signal="mouse_exited" from="crewboy/mouseNode/RichTextLabel" to="." method="_on_RichTextLabel_mouse_exited"]
+[connection signal="pressed" from="Player/GUI/GUI/Pause/PauseMenu/ResumeButton" to="Player/GUI/GUI/Pause" method="_on_ResumeButton_pressed"]
+[connection signal="pressed" from="Player/GUI/GUI/Pause/PauseMenu/SaveButton" to="." method="_on_SaveButton_pressed"]
+[connection signal="pressed" from="Player/GUI/GUI/Pause/PauseMenu/LoadButton" to="." method="_on_LoadButton_pressed"]
+[connection signal="pressed" from="Player/GUI/GUI/Pause/PauseMenu/QuitButton" to="." method="_on_QuitButton_pressed"]
+[connection signal="mouse_entered" from="pool/pool" to="." method="_on_pool_mouse_entered"]
+[connection signal="mouse_exited" from="pool/pool" to="." method="_on_pool_mouse_exited"]
+[connection signal="mouse_entered" from="niko/niko" to="." method="_on_niko_mouse_entered"]
+[connection signal="mouse_exited" from="niko/niko" to="." method="_on_niko_mouse_exited"]
+[connection signal="pressed" from="Node2D/contextMenu/exitButton" to="." method="_on_exitButton_pressed"]
+[connection signal="pressed" from="Node2D/contextMenu/viewButton" to="." method="_on_viewButton_pressed"]
+[connection signal="pressed" from="Node2D/contextMenu/talkButton" to="." method="_on_talkButton_pressed"]
+[connection signal="pressed" from="Node2D/nikoMenu/exitNiko" to="." method="_on_exitNiko_pressed"]
+[connection signal="pressed" from="Node2D/nikoMenu/viewNiko" to="." method="_on_viewNiko_pressed"]
+[connection signal="pressed" from="Node2D/nikoMenu/talkNiko" to="." method="_on_talkNiko_pressed"]
+[connection signal="pressed" from="Node2D/poolMenu/exitButton2" to="." method="_on_exitButton2_pressed"]
+[connection signal="pressed" from="Node2D/poolMenu/viewButtonPool" to="." method="_on_viewButtonPool_pressed"]
+[connection signal="pressed" from="Node2D/poolMenu/touchButton" to="." method="_on_touchButton_pressed"]
+[connection signal="pressed" from="Node2D/poolMenu/swimButton" to="." method="_on_swimButton_pressed"]
+[connection signal="area_entered" from="enter" to="." method="_on_enter_area_entered"]

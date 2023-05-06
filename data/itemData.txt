@@ -1,0 +1,14 @@
+{
+   "Axe": {
+	"ItemCategory": "Axe",
+	"StackSize": 1,
+	"ItemAttack": 3,
+	"ItemSpeed": 0.75,
+	"Description": "A wooden axe, the weakest of axes."
+  },
+  "Hoe": {
+	"ItemCategory": "Hoe",
+	"StackSize": 99,
+	"Description": "Do some gardening with this...garden tool!"
+  }
+}

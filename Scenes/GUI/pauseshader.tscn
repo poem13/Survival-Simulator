@@ -1,0 +1,67 @@
+[gd_scene load_steps=5 format=2]
+
+[sub_resource type="Shader" id=22]
+code = "shader_type canvas_item;
+
+uniform float v = 1.0; 
+uniform float size = 10.0;
+void fragment() {
+	vec4 c = textureLod(TEXTURE, UV, 0.0);
+	for (float x = -size; x < size; x++)
+	{
+		for (float y = -size; y < size; y++)
+		{
+			if (x*x + y*y > size*size){continue;}
+			vec4 new_c = texture(TEXTURE, UV+TEXTURE_PIXEL_SIZE*vec2(x, y));
+			if (length(new_c) >length(c)){
+				c = new_c;
+			}
+		}
+	}
+	COLOR = c;
+	
+}"
+
+[sub_resource type="ShaderMaterial" id=23]
+shader = SubResource( 22 )
+shader_param/v = 1.0
+shader_param/size = 10.0
+
+[sub_resource type="Shader" id=20]
+code = "shader_type canvas_item;
+
+uniform bool hide = false;
+uniform vec4 color : hint_color = vec4(1);
+uniform float strength = 0.2;
+
+void fragment(){
+	vec4 pixel = texture(SCREEN_TEXTURE, SCREEN_UV);
+        COLOR = pixel;
+	if (hide == false){ 
+		
+		vec3 grayscale_value = vec3(dot(pixel.rgb, vec3(0.299, 0.587, 0.114)));
+		float range = 1.0 - step(distance(pixel.rgb, color.rgb), strength);
+		COLOR.rgb = mix(pixel.rgb, grayscale_value, range);
+	}
+	
+}"
+
+[sub_resource type="ShaderMaterial" id=21]
+shader = SubResource( 20 )
+shader_param/hide = false
+shader_param/color = Color( 0.356863, 0.356863, 0.356863, 1 )
+shader_param/strength = 0.2
+
+[node name="pauseshader" type="CanvasLayer"]
+scale = Vector2( 30, 16 )
+transform = Transform2D( 30, 0, 0, 16, 0, 0 )
+
+[node name="TextureRect" type="TextureRect" parent="."]
+material = SubResource( 23 )
+margin_right = 40.0
+margin_bottom = 40.0
+
+[node name="ColorRect" type="ColorRect" parent="."]
+material = SubResource( 21 )
+margin_right = 40.0
+margin_bottom = 40.0

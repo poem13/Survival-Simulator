@@ -1,0 +1,30 @@
+FEATURES
+DONE or ALMOST DONE
+- Save/Load system...
+	- need to add data for outfit and load that + stats
+- Hunger
+- Health
+- Right click context menu
+	- got to redesign + add conditionals where it clicks only when you are nearby
+- Dialogue system
+- Pause Menu 
+	- have to redesign
+	- add workable options
+- Crafting
+	- have to redesign, optimize...
+	- find a way to add to inventory
+- Day and night
+	- have to add afternoon + fix bug of sun not showing at start
+WIP
+- Inventory system
+
+NOT STARTED
+- Management of villagers/Rationing
+- Spoiling food
+- Weather events + seasons
+- Hunting
+- Fishing
+- Temperature
+- Skill system
+- Romance/Social system
+- Gifting villagers

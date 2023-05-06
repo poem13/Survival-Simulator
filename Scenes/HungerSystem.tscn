@@ -1,0 +1,38 @@
+[gd_scene load_steps=8 format=2]
+
+[ext_resource path="res://Assets/Retro Gaming.ttf" type="DynamicFontData" id=1]
+[ext_resource path="res://Scenes/Timer.tscn" type="PackedScene" id=2]
+[ext_resource path="res://HungerSystem.gd" type="Script" id=3]
+[ext_resource path="res://Assets/GUI/HealthValue.tres" type="StyleBox" id=5]
+
+[sub_resource type="StyleBoxFlat" id=1]
+bg_color = Color( 0.6, 0.6, 0.6, 0 )
+
+[sub_resource type="DynamicFont" id=3]
+outline_color = Color( 0, 0, 0, 1 )
+font_data = ExtResource( 1 )
+
+[sub_resource type="GDScript" id=2]
+
+[node name="HungerSystem" type="Node2D"]
+script = ExtResource( 3 )
+
+[node name="Timer" parent="." instance=ExtResource( 2 )]
+
+[node name="Hunger" type="ProgressBar" parent="."]
+margin_top = 9.0
+margin_right = 4.0
+margin_bottom = 23.0
+rect_rotation = -90.0
+rect_scale = Vector2( 3.4334, 0.221961 )
+custom_styles/fg = ExtResource( 5 )
+custom_styles/bg = SubResource( 1 )
+value = 100.0
+
+[node name="Label" type="Label" parent="."]
+margin_left = -53.0
+margin_top = -10.0
+margin_right = -13.0
+margin_bottom = 11.0
+custom_fonts/font = SubResource( 3 )
+script = SubResource( 2 )

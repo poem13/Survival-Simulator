@@ -1,0 +1,8 @@
+{
+  "name": "Sword",
+  "scene": "res://Crafting/Items/sword.tscn",
+  "recipe": {
+    "res://Crafting/Items/IronIngot.json": 5,
+    "res://Crafting/Items/Wood.json": 10
+  }
+}
